@@ -1,0 +1,4 @@
+-Apache Tomcat atleast 8.0.9
+-JDK installed onyour pc
+-MYSQL installed on your pc
+-Netbeans to open project with ease

@@ -1,0 +1,15 @@
+
+1. select * from TableName i.e 
+
+2. To search patient details
+select * from patientmedicinedetails where patientname=any name;
+
+3.if you want to delete any row 
+delete from tablename(patientmedicinedetails) where pkid =4
+
+4. if you want ot update to perticular column.
+
+update patientmedicinedetails set medicinedate ='2015-12-08' where pkid=4
+
+update patientmedicinedetails set MedicineTime1=3,MedicineMin1=40,MT1='AM',MedicineTime2=3,MedicineMin2=45,MT2='AM',MedicineTime3=3,MedicineMin3=50,MT3='AM'
+where PkId=4

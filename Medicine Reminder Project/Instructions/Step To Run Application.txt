@@ -1,0 +1,50 @@
+A. Java Windows App Step - 
+
+1. Install Netbean 7.2 - To Open Java Window Application-
+2. Open Project Into Netbean -  Click on File - Open Project - And Open project Where it is actually locate.
+3. Run This Project - right Click on Project Run 
+4. When Show Login Screen - 
+UserName - admin
+password - admin	
+5. Then Enter Patient Record and Medicine Record.
+
+B. Apache Java servlet-
+
+1. install Apache Tomcat 7.0 - when install ask to set port number for HTTP Client 1.1 - then enter 8050
+2. If Ask UserName - admin and Password - admin, set this value.
+3. I have Send myapp folder paste into - C:\Program Files\Apache Software Foundation\Tomcat 7.0\webapps
+4. when install successfully show icon on system tray. Right Check their service start or stop.
+
+C. Then Install My Sql Server For DB Conncetivity- MySQL_Essential_5.1.41 
+
+1. when install ask userName and Password then set to admin.
+2. I have Script for to create database and tables.
+3. In start type mysql then open mysql cmd prompt then enter password i. e admin.
+4. After that copy all script from attached script and paste into this and press enter.
+
+D. Android App -
+
+1. Software - Android Eclipse with SDK
+2. Open Attached Source file into Eclipse - 
+    Click On File/Import/Android/Select - Existing Android Code Into WorkSpace-
+    Next-Browse Source file where it actually located-Click on Select All- Finish.
+3. Then Run Android Virtual Device Manager. 
+    Show Green Logo Below The Project Menubar - Click on This To open Android Virtual Device Manager.
+    Click New - Set AVD Name (Any Name) - Select device - Below Show Memory option Set RAM - 1024 - Ok -Click        On Start.
+4. Right Click On Project- Run As Android Application.
+5. But First We want to start apache service - show in system tray - right click start service if it is stop.
+6. If Android Virtual device is successfully run then run our project.
+7. OPen Welcome Activity- Click to continue -  login with patient info - Show Patient Medicine Details -
+8. And Automatically set Alarm for Patient Medicine Details Time and when time is up then alarm will be fire.
+9. if you want open using mobile then after running projetc - 
+   Go To Project Source Location - bin folder - copy apk file - and install on your mobile.
+10. Before that check In login.java file in locate in src/com.example.medicalandroidapp/loginActivity.java
+11. Set your ip into this address i.e - http://192.168.1.100:8050/myapp/store?u="+username+"&p="+password+
+      set your ip instead of 192.168.1.100.
+12. Again Run project so create new apk with update code.
+13. take this install on your mobile. but do one this is connect your mobile to laptop/PC using wifi hotspot to send request and get response.
+
+E. Run command from attched script to create database and tables.
+
+
+

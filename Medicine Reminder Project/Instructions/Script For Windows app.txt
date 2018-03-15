@@ -1,0 +1,53 @@
+create Database if not exists Medicom;
+
+use Medicom;
+
+create Table if not exists Login
+(
+user varchar(30) primary key,
+password varchar(30) not null
+);
+
+Insert into login values("admin","admin");
+
+delimiter $$
+
+CREATE TABLE `patientrecord` (
+  `PkId` int(11) NOT NULL AUTO_INCREMENT,
+  `SrNo` int(11) DEFAULT '0',
+  `PatientName` varchar(45) DEFAULT NULL,
+  `UserName` varchar(25) DEFAULT NULL,
+  `Password` varchar(25) DEFAULT NULL,
+  `Address` varchar(105) DEFAULT NULL,
+  `MobileNo` varchar(12) DEFAULT NULL,
+  `BirthDate` datetime DEFAULT NULL,
+  `Age` int(11) DEFAULT NULL,
+  `Gender` varchar(10) DEFAULT NULL,
+  `BloodGroup` varchar(10) DEFAULT NULL,
+  `CreationDate` datetime DEFAULT NULL,
+  PRIMARY KEY (`PkId`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1$$
+
+
+CREATE TABLE `patientmedicinedetails` (
+  `PkId` int(11) NOT NULL AUTO_INCREMENT,
+  `PatientName` varchar(45) DEFAULT NULL,
+  `SrNo` int(11) DEFAULT NULL,
+  `MedicineDate` datetime DEFAULT NULL,
+  `MedicineName1` varchar(25) DEFAULT NULL,
+  `MedicineName2` varchar(25) DEFAULT NULL,
+  `MedicineName3` varchar(25) DEFAULT NULL,
+  `OtherMedicine` varchar(45) DEFAULT NULL,
+  `MedicineTime1` varchar(15) DEFAULT NULL,
+  `MedicineMin1` varchar(5) DEFAULT NULL,
+  `MT1` varchar(5) DEFAULT NULL,
+  `MedicineTime2` varchar(25) DEFAULT NULL,
+  `MedicineMin2` varchar(5) DEFAULT NULL,
+  `MT2` varchar(5) DEFAULT NULL,
+  `MedicineTime3` varchar(25) DEFAULT NULL,
+  `MedicineMin3` varchar(5) DEFAULT NULL,
+  `MT3` varchar(5) DEFAULT NULL,
+  PRIMARY KEY (`PkId`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1$$
+
+
